@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Soma de Números</title>
+</head>
+<body>
+  <h2>Somador Simples</h2>
+
+  <label>Primeiro número: </label>
+  <input type="number" id="num1"><br><br>
+
+  <label>Segundo número: </label>
+  <input type="number" id="num2"><br><br>
+
+  <button onclick="somar()">Somar</button>
+
+  <h3 id="resultado"></h3>
+
+  <script>
+    function somar() {
+      const n1 = Number(document.getElementById('num1').value);
+      const n2 = Number(document.getElementById('num2').value);
+      const soma = n1 + n2;
+
+      document.getElementById('resultado').innerText = `Resultado: ${soma}`;
+    }
+  </script>
+</body>
+</html>
